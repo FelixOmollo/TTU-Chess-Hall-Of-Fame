@@ -99,8 +99,8 @@
     .grid-container{
         display: grid;
         width: 90%;
-        padding-left: 15px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-top: 20px;
         grid-template-columns: 1fr;
         gap: 20px;
