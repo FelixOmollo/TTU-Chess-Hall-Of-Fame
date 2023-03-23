@@ -99,7 +99,7 @@
     .grid-container{
         display: grid;
         width: 90%;
-        padding-left: 2.5%;
+        padding-left: 3%;
         padding-right: 2.5%;
         padding-top: 20px;
         grid-template-columns: 1fr;
