@@ -10,13 +10,17 @@
 }
 
 .header{
-    background-color: darkcyan;
+    background: rgba(13, 104, 105, 0.799);
     width: 100%;
     height: fit-content;/*changed to fit-content*/
+    padding: 0 0 30px 0;
+}
+.header .header-content{
+    padding: 40px 0 0 0;
 }
 
 .inductees{
-    background-color: darkgreen;
+    background-color: rgba(0, 100, 0, 0.9);
     width: 100%;
     /*min-height: 300px;/*change this to fit content*/
 }
@@ -25,7 +29,6 @@
     width: 90%;
     padding-left: 4.5%;
     padding-right: 2%;
-    padding-top: 30px;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 50px;
     padding-bottom: 50px;
@@ -42,11 +45,10 @@
 .card img{
     width: 250px;
     height: 250px;
-    border-radius: 5px;
 }
-.img-description{
+.description{
     color: aqua;
-    margin-top: 20px;
+    padding: 20px 0 0px 0;
 }
 
 .header-content{
@@ -62,17 +64,30 @@
     height: 150px;
     border-radius: 80px;
 }
+.h2{
+    color: rgb(183, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0 0 0;
+}
+.strengths {
+    display: ;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    padding: 0 0 340px 260px;
+    color: yellow;
+}
 
 .footer{
-    background-color: grey;
+    background-color: rgba(3, 33, 43, 0.742);
 }
 .footer-text{
     font-weight: 500;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: sans-serif;
 }
 /****Making it responsive*******/

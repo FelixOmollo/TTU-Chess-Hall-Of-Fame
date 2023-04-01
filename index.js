@@ -1,21 +1,74 @@
-// Get all the cards using the class selector
-const cards = document.querySelectorAll('.card');
+const context = {
+    portfolio:[
+        {
+            image: 'Chess-Club Logo.jpg',
+            description: 'Udi',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Nick',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Boni',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Gich',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Bern bern',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
 
-// Loop through all the cards
-cards.forEach(card => {
-  // Get the image and the description elements within the card
-  const image = card.querySelector('img');
-  const description = card.querySelector('.img-description');
-  
-  // Set up a mouseover event listener on the image
-  image.addEventListener('mouseover', () => {
-    // Change the text in the description when the mouse is over the image
-    description.textContent = 'John Doe was in TTU btween 2018-2019, he graduated with a degree in Analytical Chemistry.';
-  });
-  
-  // Set up a mouseout event listener on the image
-  image.addEventListener('mouseout', () => {
-    // Change the text back to the original when the mouse is out of the image
-    description.textContent = 'John Doe';
-  });
-});
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Emily',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Clinton',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Danson',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Senetor',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'YG',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+
+        },
+        {
+            image:'Chess-Club Logo.jpg',
+            description:'Kevoh',
+            strengths: 'Nani was in Taita Taaveta University between 2018 & 2023. It is approximated that he had a rating of 1900.'
+
+        }
+    ]
+};
+
+const templateElement = document.getElementById('templateHB');
+const templateSource = templateElement.innerHTML;
+const template = Handlebars.compile(templateSource);
+const compiledHTML = template(context);
+
+//Rendering the template onto the webpage
+document.getElementById('display-players').innerHTML = compiledHTML;
