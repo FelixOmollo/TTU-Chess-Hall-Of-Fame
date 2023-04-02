@@ -104,7 +104,7 @@ const displayPersonality = (event) => {
 };
 
 const returnToDefault = (event) => {
-    event.target.style.visibility = 'hidden';
+    event.target.style.visibility = '';
     event.target.style.width = '';
 }
 
