@@ -76,6 +76,7 @@ html, body{
     position: absolute;
     width: 180px;
     color: yellow;
+    visibility: hidden;
     left: 50%;
     top: 37%;
     transform: translate(-50%, -50%);

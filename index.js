@@ -96,18 +96,20 @@ document.getElementById('display-players').innerHTML = compiledHTML;
 
 
 //On mouseover and out
-const hiddenInfo = document.querySelector('.strengths');
+const hiddenInfo = document.querySelectorAll('.strengths');
 
 const displayPersonality = (event) => {
-    hiddenInfo.style.display = 'block';
-    hiddenInfo.style.width = '200px';
+    event.target.style.visibility = 'visible';
+    event.target.style.width = '220px';
 };
 
 const returnToDefault = (event) => {
-    hiddenInfo.style.display = '';
-    hiddenInfo.style.width = '';
+    event.target.style.visibility = 'hidden';
+    event.target.style.width = '';
 }
 
 //adding event listener
-hiddenInfo.addEventListener('mouseover', displayPersonality);
-hiddenInfo.addEventListener('mouseout', returnToDefault);
+hiddenInfo.forEach(hiddenInfo => {
+    hiddenInfo.addEventListener('mouseover', displayPersonality);
+    hiddenInfo.addEventListener('mouseout', returnToDefault);
+});
